@@ -337,6 +337,29 @@
   footer .foot-notice{margin-top:14px;color:#B9CBC8;font-size:11px;line-height:1.8;}
   footer .foot-copy{margin-top:16px;color:#6E8481;font-size:10.5px;letter-spacing:.04em;}
 </style>
+<!-- Meta Pixel（広告効果の測定。プライバシーポリシー「Cookie等の利用について」参照） -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1634553011545738');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1634553011545738&ev=PageView&noscript=1"></noscript>
+<script>
+// 「LINEではじめる」ボタンのクリックを、広告の成果（リード）として記録する
+document.addEventListener('click', function (ev) {
+  var a = ev.target.closest && ev.target.closest('a[href*="lin.ee/"]');
+  if (!a || !window.fbq) return;
+  fbq('track', 'Lead', { content_name: 'LINE友だち追加ボタン' });
+  if (a.target === '_blank' || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
+  ev.preventDefault();
+  setTimeout(function () { location.href = a.href; }, 300);   // 記録を送る時間を確保してから移動
+});
+</script>
 </head>
 <body>
 
