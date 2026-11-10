@@ -285,10 +285,11 @@
   /* =========================================================
      ⑬ SCREENING（審査制）
   ========================================================= */
-  .screening{background:var(--warm-white);text-align:center;}
-  .screening h2{font-size:22px;font-weight:600;margin-bottom:22px;line-height:1.8;}
-  .screening .sc-desc{font-size:13.5px;color:var(--gray);max-width:300px;margin:0 auto 46px;}
-  .sc-steps{display:inline-flex;flex-direction:column;text-align:left;}
+  /* 共感(明るい背景)の直後に置くため、淡いグリーンで区切る(2026-11-10) */
+  .screening{background:#E8EFEA;text-align:center;}
+  .screening h2{font-size:22px;font-weight:600;margin-bottom:22px;line-height:1.8;color:var(--deep-green);}
+  .screening .sc-desc{font-size:13.5px;color:#55625D;max-width:300px;margin:0 auto 40px;}
+  .sc-steps{display:inline-flex;flex-direction:column;text-align:left;background:#fff;border:1px solid rgba(216,182,106,0.45);border-radius:14px;padding:26px 34px;}
   .sc-step{display:flex;gap:18px;align-items:flex-start;}
   .sc-num{font-family:'Shippori Mincho',serif;font-size:15px;color:var(--gold);width:26px;height:26px;border:1px solid var(--gold);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
   .sc-connector{width:1px;height:26px;background:var(--gold);opacity:.5;margin-left:13px;}
