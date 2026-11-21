@@ -62,7 +62,7 @@
 
   /* ① ファーストビュー（以前のデザイン＋背景写真） */
   .fv{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;color:var(--white);overflow:hidden;padding:56px 0 64px;text-align:center;}
-  .fv-bg{position:absolute;inset:0;background-color:var(--green);background-image:url('images/a-fv.webp'),url('images/fv.jpg');background-size:cover;background-position:center;transform:scale(1.04);animation:bgDrift 18s ease-in-out infinite alternate;}
+  .fv-bg{position:absolute;inset:0;background-color:var(--green);background-image:url('images/a-fv.webp');background-size:cover;background-position:center;transform:scale(1.04);animation:bgDrift 18s ease-in-out infinite alternate;}
   .fv-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(10,76,73,.62) 0%,rgba(0,63,61,.80) 55%,rgba(0,46,45,.93) 100%);}
   @keyframes bgDrift{to{transform:scale(1.10);}}
   .fv-inner{position:relative;z-index:1;width:100%;display:flex;flex-direction:column;align-items:center;}
@@ -288,7 +288,7 @@
         <div class="c-step">お店で、はじめまして</div>
       </div>
     </div>
-    <div class="photo reveal" style="background-image:url('images/c-concept.webp'),url('images/concept.jpg')"><span class="img-note">※写真はイメージです</span></div>
+    <div class="photo reveal" style="background-image:url('images/c-concept.webp')"><span class="img-note">※写真はイメージです</span></div>
   </div>
 </section>
 
@@ -469,6 +469,7 @@
     <svg viewBox="0 0 420 200"><path class="logo-path" style="stroke:url(#goldLine)" d="M 10 24 C 100 28, 161 69, 218 121 C 227 130, 229 144, 220 153 C 212 162, 197 164, 188 155 C 179 147, 178 132, 186 123 C 192 116, 202 113, 211 116 C 240 118, 275 75, 300 55 C 320 39, 370 28, 410 22"/></svg>
     <h2>大切な出会いを、<br><span class="accent">もっと丁寧に。</span></h2>
     <p class="lead">近くにいても、きっかけがなければ出会わなかった二人に、<br>小さなきっかけを。</p>
+    <div class="pic w" style="margin:0 0 30px;background-image:url('images/h-closer.webp')"><span class="img-note">※写真はイメージです</span></div>
     <a href="https://lin.ee/WNsf1w7" class="cta">LINEではじめる</a>
     <p class="cta-sub">登録無料・アプリのインストール不要<br>20歳未満の方はご利用いただけません</p>
   </div>
